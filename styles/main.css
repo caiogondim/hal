@@ -1,0 +1,119 @@
+/*
+-------------------- */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.wrapper {
+	width: 700px;
+	height: 432px;
+	position: absolute;
+	left: 50%;
+	margin-left: -350px;
+	top: 50%;
+	margin-top: -216px;
+	overflow: hidden;
+}
+
+/* Alert
+-------------------- */
+.alert {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 30px;
+	background: #EDEDED;
+	z-index: 2;
+	text-align: center;
+	padding: 5px 0 0 0;
+	font-size: 16px;
+	color: #222;
+	top: -30px;
+	-webkit-transition: all 0.5s ease-in-out;
+}
+
+.alert-visible {
+	top: 0;
+}
+
+/* Mic area
+-------------------- */
+.mic-area {
+	height: 100%;
+	width: 85px;
+	background: #222 url(../images/noise.png) no-repeat;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.mic {
+	display: block;
+	height: 73px;
+	width: 50px;
+	position: absolute;
+	top: 175px;
+	left: 17px;
+	background: url(../images/mic.png);
+	pointer-events: none;
+	z-index: 1;
+}
+
+.mic-input {
+	color: transparent;
+	background-color: transparent;
+	border: 0;
+	width: 15px;
+	margin: 40px 36px;
+	-webkit-transform: scale(4.0, 4.0);
+	position: absolute;
+	top: 165px;
+	outline: none;
+	z-index: 0;
+	opacity: 0;
+}
+
+/* Results
+-------------------- */
+.results {
+	position: absolute;
+	width: 615px;
+	height: 100%;
+	right: 0;
+	background: #666;
+}
+.results ul {
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	padding: 0;
+}
+
+.results li {
+	width: 150px;
+	height: 150px;
+	float: left;
+	background: gray;
+	box-shadow: 0 0 15px rgba( 0, 0, 0, 0.5);
+	margin: 25px;
+	list-style-type: none;
+	border-radius: 5px;
+
+}
+
+.result-big {
+	height: 390px;
+	display: block;
+	position: absolute;
+	top: 21px;
+	left: 50%;
+	border-radius: 5px;
+	background: gray;
+	box-shadow: 0 0 15px rgba( 0, 0, 0, 0.5);
+	max-width: 570px;
+}
